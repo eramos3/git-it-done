@@ -52,7 +52,6 @@ var displayRepos = function (repos, searchTerm) {
     // format repo name
     var repoName = repos[i].owner.login + "/" + repos[i].name;
 
-    // create a container for each repo
     // create a link for each repo
     var repoEl = document.createElement("a");
     repoEl.classList = "list-item flex-row justify-space-between align-center";
@@ -82,8 +81,6 @@ var displayRepos = function (repos, searchTerm) {
     // append container to the dom
     repoContainerEl.appendChild(repoEl);
   }
-  console.log(repos);
-  console.log(searchTerm);
 };
 
 
